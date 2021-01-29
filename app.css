@@ -1,0 +1,141 @@
+body {
+    padding-top: 3.5rem;
+  }
+  
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  .navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark {
+	background: #0575E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+
+/*#qrcode {
+	margin-left: 400px;
+}
+
+@media only screen and (max-width: 600px){
+  #qrcode {
+    margin: 50px;
+  }
+}
+*/
+
+
+
+.footer{
+  background: #0575E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-top: 0px !important;
+  color:white;
+  
+
+
+  .links{
+    ul {list-style-type: none;}
+    .links li a{
+      color: white;
+      transition: color .2s;
+      &:hover{
+        text-decoration:none;
+        color:#4180CB;
+        }
+    }
+  }  
+  .about-company{
+    i{font-size: 25px;}
+    a{
+      color:white;
+      transition: color .2s;
+      &:hover{color:#ffffff}
+    }
+  } 
+  .location{
+    i{font-size: 18px;}
+  }
+  .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
+}
+
+
+.links a{
+  color: #fff;
+}
+
+
+
+@media (max-width: 800px) {
+  .footer {
+    text-align: center;
+  }
+
+  .location{
+    margin-top: 20px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+  height: 100%;
+  border-radius: 20px;
+
+}
+
+.flex-item-left {
+  background-color:gold;
+  padding: 10px;
+  flex: 50%;
+  border-radius: 30px 0px 0px 0px;
+}
+
+.flex-item-right {
+  background-color:gold;
+  padding: 10px;
+  flex: 50%;
+  border-radius: 0px 0px 30px 0px;
+}
+
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+
+
+
+img {
+	border: 6px solid;
+	border-radius: 25px;
+	padding: 30px;
+}
+
+.preview{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="app.css">
+    <title>QR code</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">QR Code Generator</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Create QR</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="readqr.html">Read QR</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <main role="main">
+        <div class="container">
+
+          <div class="flex-container">
+            <div class="flex-item-left">
+              <div class="form-group">
+                <label for="comment">Select File</label>
+                <input type="file" class="form-control" id="file" name="" onchange="showPreview(event)"/>
+
+<div class="preview">
+  <img alt="Image Preview" id="file-preview">
+</div>                
+              </div> 
+            </div>
+            <div class="flex-item-right">
+              <div id="qrdata">
+                <h3>Decoded Data<h3>
+                <div class="form-group">
+                <textarea class="form-control" rows="5" id="content"></textarea>
+                </div> 
+              </div>
+            </div>
+          </div>
+          <hr />
+        </div>     
+    </main>
+
+    <!--Footer-->
+    <div class="mt-5 pt-5 pb-5 footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-xs-12 about-company">
+            <h2>QR Code Generator </h2>
+            <p class="pr-5 text-white-50">QR Code Generation and Reading Simplified</p>
+            <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i class="fa fa-linkedin-square"></i></a></p>
+          </div>
+          <div class="col-lg-3 col-xs-12 links">
+            <h4 class="mt-lg-0 mt-sm-3">Links</h4>
+              <ul class="m-0 p-0">
+                <li><a href="index.html">Create QR</a></li>
+                <li><a href="readqr.html">Read QR</a></li>
+              </ul>
+          </div>
+          <div class="col-lg-4 col-xs-12 location">
+            <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+            <p>India</p>
+            <p class="mb-0"><i class="fa fa-phone mr-3"></i>+91 987654321</p>
+            <p><i class="fa fa-envelope-o mr-3"></i>support@qrcodegenerator.com</p>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col copyright">
+            <p class=""><small class="text-white-50">© 2021. QR Code</small></p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="qrReader.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
